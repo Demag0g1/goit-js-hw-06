@@ -4,6 +4,8 @@
 const sizeControl = document.querySelector("input#font-size-control");
 const textChange = document.querySelector("span#text");
 
+textChange.style.fontSize = `${sizeControl.value}px`;
 sizeControl.addEventListener("input", (event) => {
   textChange.style.fontSize = `${event.target.value}px`;
+  // console.log(textChange.style.fontSize);
 });
