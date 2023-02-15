@@ -14,11 +14,11 @@ const ingredients = [
   "Condiments",
 ];
 const listRef = document.querySelector("#ingredients");
-const ListItemArr = [];
-ListItemArr.forEach((item) => {
+const listItemArr = [];
+ingredients.forEach((ingredient) => {
   const listItem = document.createElement("li");
   listItem.textContent = ingredient;
   listItem.classList.add("item");
-  ListItemArr.push(listItem);
+  listItemArr.push(listItem);
 });
-listRef.append(...ListItemArr);
+listRef.append(...listItemArr);
