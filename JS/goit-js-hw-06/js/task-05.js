@@ -8,7 +8,7 @@ const refs = {
 document.querySelector("#name-input").value = "";
 
 refs.input.addEventListener("input", (event) => {
-  refs.output.textContent = event.target.value;
+  refs.output.textContent = event.currentTarget.value;
 
   if (event.target.value === "") refs.output.textContent = "Anonymous";
 });
