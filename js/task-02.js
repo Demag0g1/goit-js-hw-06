@@ -15,7 +15,7 @@ const ingredients = [
 ];
 const listRef = document.querySelector("#ingredients");
 const ListItemArr = [];
-ListItemArr.forEach((item) => {
+ingredients.forEach((item) => {
   const listItem = document.createElement("li");
   listItem.textContent = ingredient;
   listItem.classList.add("item");
