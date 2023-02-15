@@ -5,7 +5,6 @@ const refs = {
   input: document.querySelector("#name-input"),
   output: document.querySelector("#name-output"),
 };
-document.querySelector("#name-input").value = "";
 
 refs.input.addEventListener("input", (event) => {
   refs.output.textContent = event.target.value;
